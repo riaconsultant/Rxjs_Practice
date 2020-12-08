@@ -11,6 +11,6 @@ export class AppService {
   constructor(private http: HttpClient) { }
 
   getData(): Observable<any>{
-    return this.http.get(environment.service.user.url);
+    return this.http.get(environment.service.todos.url);
   }
 }

@@ -9,6 +9,7 @@ Rxjs is a library for composing asynchronous and event - based programs by using
 
 # Operators
 1. Combination
+    1. 
 2. Conditional
 3. Creation
 4. Error handling

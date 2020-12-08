@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   service: {
-    user: { url : 'assets/data/abc.json'}
+    user: { url : 'assets/data/abc.json'},
+    todos: { url: 'https://jsonplaceholder.typicode.com/todos/'}
   }
 };
 
