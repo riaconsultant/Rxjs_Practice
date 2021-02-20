@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AppService } from './app.service';
@@ -10,7 +11,7 @@ import { AppService } from './app.service';
 export class AppComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy{
   title = 'rxjs';
   list$: Observable<any>;
-  constructor(private serv: AppService){
+  constructor(private serv: AppService, private http:HttpClient){
 
   }
 
@@ -29,5 +30,6 @@ export class AppComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   ngOnDestroy(): void {
 
   }
+  /** SwitchMap, ConcatMap, ForkJoin Operator */
 
 }

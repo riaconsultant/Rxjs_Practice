@@ -1,8 +1,14 @@
-<H2>Rxjs Library API</H2>
+<app-top-parent></app-top-parent>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <input type="text" name="" />
+    </div>
+  </div>
+</div>
+<h2>Rxjs Library API</h2>
 <div *ngFor="let item of list$| async;  let i=index">
   <span>{{i}}</span>
   <span>{{item.id}}</span>
   <span>{{item.title}}</span>
 </div>
-
-<!-- <router-outlet></router-outlet> -->
